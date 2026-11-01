@@ -89,6 +89,10 @@ nav a:hover{text-decoration:underline}
 .portrait figcaption span{font-size:.85rem;color:var(--muted)}
 .livecard{position:absolute;left:-34px;bottom:120px;display:flex;align-items:center;gap:12px;background:#fff;color:var(--ink);border-radius:12px;padding:12px 16px;box-shadow:0 14px 28px -12px rgba(0,0,0,.6);max-width:260px}
 .livecard b{display:block;font-size:.95rem}.livecard span{display:block;font-size:.78rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sheet{background:#E8F0FD;border:1px solid #C3D6F7;border-radius:16px;padding:34px;display:grid;grid-template-columns:1.4fr .6fr;gap:28px;align-items:center}
+.sheet ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.btn-blue{display:block;text-align:center;background:var(--link);color:#fff}.btn-blue:hover{background:#1750B0}
+footer a{color:var(--link)}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .card{background:var(--paper);border:1px solid var(--rule);border-top:4px solid var(--link);border-radius:12px;padding:20px}
 .card p{margin:0;color:var(--muted);font-size:.95rem}
@@ -117,7 +121,7 @@ footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;border-top:1px sol
 .float:hover{background:var(--wa2)}
 
 @media (max-width:860px){
- .hero{padding:44px 0 0}.hero-text{padding-bottom:6px}.portrait{margin:0 auto;max-width:340px}.livecard{left:0}.portrait figcaption{right:0}.cards{grid-template-columns:1fr 1fr}
+ .hero{padding:44px 0 0}.hero-text{padding-bottom:6px}.portrait{margin:0 auto;max-width:340px}.livecard{left:0}.portrait figcaption{right:0}.cards{grid-template-columns:1fr 1fr}.sheet{grid-template-columns:1fr;padding:24px}
  .hero-grid,.about,.grid2,.guides,.promise{grid-template-columns:1fr;gap:26px}
  .steps{grid-template-columns:1fr 1fr}
  .grid3{grid-template-columns:1fr}
@@ -139,7 +143,7 @@ footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;border-top:1px sol
    <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#10233F"/><g transform="rotate(-45 20 21)" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><rect x="5" y="15" width="18" height="12" rx="6"/><rect x="17" y="15" width="18" height="12" rx="6"/></g><circle cx="33" cy="8" r="5" fill="#19A35F" stroke="#10233F" stroke-width="2"/></svg>
    <span>Raouf Zulfiqar<small>Guest posting service</small></span>
   </a>
-  <nav aria-label="Main"><a href="#services">Services</a><a href="#process">How it works</a><a href="#promise">Promise</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#process">How it works</a><a href="#prices">Prices</a><a href="#guides">Guides</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
  </div>
 </header>
 
@@ -179,6 +183,16 @@ footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;border-top:1px sol
   </div>
   <p style="margin:22px 0 0;color:var(--muted)">Agency or repeat client? Tell me how many articles you need each month and we can agree a simple arrangement.</p>
  </div></section>
+
+  <section id="prices"><div class="wrap"><div class="sheet">
+  <div>
+   <h2>Websites and prices</h2>
+   <p>My full list of websites, grouped by niche, is in a Google Sheet. Every site has its own fixed price.</p>
+   <ul><li>Fashion, real estate, health, travel, technology, crypto, business, law and more</li><li>Regional lists: Turkish, French, German and Australian sites</li><li>List updated every month</li></ul>
+   <p style="margin:12px 0 0;font-size:.95rem">Please confirm the price with me before you place an order.</p>
+  </div>
+  <div><a class="btn btn-blue" href="https://docs.google.com/spreadsheets/d/1iXYdRBfyPszLYJegAvW2iX9U5Jp-divDmLZ9wTI8m2w/edit?usp=sharing" target="_blank" rel="noopener">Open the price sheet</a></div>
+ </div></div></section>
 
  <section id="process"><div class="wrap">
   <h2>How an order works</h2>
@@ -231,9 +245,9 @@ footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;border-top:1px sol
  <section id="needs"><div class="wrap">
   <h2>Topics and what I need from you</h2>
   <p class="sub">Tell me your topic and I check what is available. These are the niches I work with most.</p>
-  <div class="tags"><span>Business</span><span>Technology</span><span>Finance</span><span>Health</span><span>Lifestyle</span><span>Travel</span><span>Education</span><span>Marketing and SEO</span><span>E-commerce</span><span>Real estate</span><span>Fashion</span><span>Food</span></div>
+  <div class="tags"><span>Fashion</span><span>Real estate</span><span>Health</span><span>Home</span><span>Sports</span><span>Travel</span><span>Technology</span><span>Crypto</span><span>Games</span><span>Automotive</span><span>Business</span><span>Law</span><span>Turkish sites</span><span>French sites</span><span>German sites</span><span>Australian sites</span></div>
   <div class="grid2" style="margin-top:30px">
-   <div class="box"><h3>To start an order, send me</h3><ul><li>Your article as a Word or Google Doc</li><li>The page you want to link to</li><li>The anchor text you prefer</li><li>Your niche and any sites you want to avoid</li></ul></div>
+   <div class="box"><h3>To start an order, send me</h3><ul><li>Your article as a Word or Google Doc. It should be SEO-optimized, AI-free and plagiarism-free</li><li>The page you want to link to</li><li>The anchor text you prefer</li><li>Your niche and any sites you want to avoid</li></ul></div>
    <div class="box"><h3>When it is done, you receive</h3><ul><li>The live URL of your post</li><li>Confirmation of the link type</li><li>The publishing date</li><li>My help if the site needs any changes</li></ul></div>
   </div>
  </div></section>
@@ -265,12 +279,14 @@ footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;border-top:1px sol
  <section id="faq"><div class="wrap faq">
   <h2>Common questions</h2>
   <p class="sub">Anything not covered here, ask me directly.</p>
-  <details><summary>What do you charge?</summary><p>Price depends on the website and topic, so I quote per order. Message me with your niche and I will share options and prices.</p></details>
+  <details><summary>What do you charge?</summary><p>Prices are fixed for each website and listed in my price sheet. Please confirm the price with me before you place an order.</p></details>
   <details><summary>Can I see the website before I pay?</summary><p>Yes. I tell you which site I have in mind and share its details first.</p></details>
   <details><summary>Do I need to write the article?</summary><p>You can send your own article. If you need one written, ask me and we can discuss it.</p></details>
-  <details><summary>Will the link be dofollow?</summary><p>That depends on the website. I confirm the link type with you before the order goes ahead.</p></details>
+  <details><summary>Will the link be dofollow?</summary><p>Yes. All the links I place are dofollow.</p></details>
   <details><summary>How long does it take?</summary><p>Each website has its own review time. I give you an estimate for the specific site before you confirm.</p></details>
-  <details><summary>Which topics do you cover?</summary><p>Many common niches such as business, technology, finance, health, lifestyle and travel. Tell me yours and I will check what is available.</p></details>
+  <details><summary>Which topics do you cover?</summary><p>Fashion, real estate, health, home, sports, travel, technology, crypto, games, automotive, business, law and more, including Turkish, French, German and Australian sites. The price sheet shows them all.</p></details>
+  <details><summary>Which topics do you not accept?</summary><p>I do not work on casino, gambling, betting, adult or sexual content, songs, movies, CBD and similar niches.</p></details>
+  <details><summary>How can I pay?</summary><p>International clients can pay through Payoneer or PayPal. Message me and I will share the details.</p></details>
  </div></section>
 
  <section id="contact"><div class="wrap"><div class="cta">
@@ -279,11 +295,12 @@ footer{padding:28px 0 90px;color:var(--muted);font-size:.9rem;border-top:1px sol
   <div class="actions">
    <a class="btn btn-wa" href="https://wa.me/923240127277?text=Hi%20Raouf%2C%20I%20need%20a%20guest%20post%20placement.">WhatsApp +92 324 0127277</a>
    <a class="btn btn-line" href="mailto:raoufzulfiqar@gmail.com?subject=Guest%20post%20enquiry">raoufzulfiqar@gmail.com</a>
+   <a class="btn btn-line" href="https://www.facebook.com/share/1CQ594kTUt/" target="_blank" rel="noopener">Facebook</a>
   </div>
  </div></div></section>
 </main>
 
-<footer><div class="wrap">&copy; <span id="y">2026</span> Raouf Zulfiqar. Guest posting service.</div></footer>
+<footer><div class="wrap">&copy; <span id="y">2026</span> Raouf Zulfiqar. Guest posting service. &middot; <a href="https://www.facebook.com/share/1CQ594kTUt/" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://docs.google.com/spreadsheets/d/1iXYdRBfyPszLYJegAvW2iX9U5Jp-divDmLZ9wTI8m2w/edit?usp=sharing" target="_blank" rel="noopener">Price sheet</a></div></footer>
 <a class="float" href="https://wa.me/923240127277?text=Hi%20Raouf%2C%20I%20need%20a%20guest%20post%20placement.">WhatsApp</a>
 <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
